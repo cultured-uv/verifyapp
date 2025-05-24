@@ -16,7 +16,7 @@ import { Link, useRouter } from 'expo-router';
 export default function VerifyOrganizationEmailScreen() {
   const router = useRouter();
   const [otp, setOtp] = useState('');
-    const handleSendOtp = () => {
+  const handleSendOtp = () => {
     console.log('Sending OTP to:', otp);
 
   };
@@ -80,13 +80,14 @@ export default function VerifyOrganizationEmailScreen() {
         </View>
 
         <View style={styles.organizationIdContainer}>
-
-          <TouchableOpacity style={styles.organizationIdButton}>
+          <Link href="/verifypage2" asChild>
+            <TouchableOpacity style={styles.organizationIdButton}>
             <FontAwesome5 name="id-card" size={20} color="#333" />
             <Text style={styles.organizationIdText}>Verify by organization ID card</Text>
             <MaterialIcons name="keyboard-arrow-right" size={24} color="#999" />
 
           </TouchableOpacity>
+          </Link>
 
         </View>
       </View>

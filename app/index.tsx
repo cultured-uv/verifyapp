@@ -120,7 +120,7 @@ export default function VerifyProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#EDF2FA',
+    backgroundColor: 'C',
   },
   scrollView: {
     flex: 1,
